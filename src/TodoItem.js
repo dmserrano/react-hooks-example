@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 const TodoItem = ({ complete, handleToggleTodo, index, id, text }) => {
     const [ checked, setChecked ] = useState(complete);
@@ -25,6 +26,14 @@ const TodoItem = ({ complete, handleToggleTodo, index, id, text }) => {
             </label>
         </div>
     );
+};
+
+TodoItem.propTypes = {
+    complete: PropTypes.bool,
+    handleToggleTodo: PropTypes.func,
+    id: PropTypes.number,
+    index: PropTypes.number,
+    text: PropTypes.string
 };
 
 export default TodoItem;
