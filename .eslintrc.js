@@ -20,9 +20,13 @@ module.exports = {
     'sourceType': 'module'
   },
   'plugins': [
-    'react'
+    'react',
+    "react-hooks"
   ],
   'rules': {
-    'semi': [ "error", "always" ]
+    'semi': [ "error", "always" ],
+
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
   }
 }

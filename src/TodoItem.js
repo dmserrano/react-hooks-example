@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 const TodoItem = ({ complete, handleToggleTodo, index, id, text }) => {
@@ -8,8 +8,6 @@ const TodoItem = ({ complete, handleToggleTodo, index, id, text }) => {
         setChecked(!checked);
         handleToggleTodo(id);
     };
-
-    useEffect(() => console.log(id, checked));
 
     return (
         <div className="form-check">

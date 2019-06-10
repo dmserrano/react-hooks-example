@@ -82,7 +82,7 @@ const TodoList = () => {
                 </div>
             </div>
 
-            <div className="d-flex flex-column w-50 mt-5">
+            <div className="d-flex flex-column w-50 mt-2">
                 <h5>Create Todo</h5>
 
                 <input
@@ -101,6 +101,6 @@ const TodoList = () => {
             </div>
         </div>
     );
-}
+};
 
 export default TodoList;
